@@ -1,5 +1,5 @@
 // App.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import MicButton from './MicButton';
@@ -57,7 +57,7 @@ const MainPage = () => {
         <h1 className="vibe">vibe check</h1>
         <hr className="separator" />
         <p className="description">
-          tap the microphone button and describe your event in 10 seconds.<br />
+          tap the microphone button and describe your event in 5 seconds.<br />
           our AI will find the perfect outfit for you.
         </p>
       </div>

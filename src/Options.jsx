@@ -110,7 +110,7 @@ const Options = () => {
         <Link to="/">
           <img src="/logo.png" alt="logo" className="logo" />
         </Link>
-        <h1 className="options-title">Recommendations for You</h1>
+        <h1 className="options-title">recommendations for you</h1>
         <Link to="/shoppingcart">
           <img src="/shopcart.png" alt="shopcart" className="shopcart" />
         </Link>

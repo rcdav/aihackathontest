@@ -2,7 +2,7 @@
 
 .new-button {
   position: absolute; /* Use absolute positioning */
-  top: 20px; /* Adjust this value to move the button up */
+  top: 130px; /* Adjust this value to move the button up */
   /*changed from 150 to 20 bc wasnt fitting all screens*/
   padding: 10px 20px;
   font-size: 16px;
