@@ -1,0 +1,40 @@
+import React, { useState } from 'react';
+
+import { fetchEmotionFromSpeech } from './humeapi'; // Your function to fetch emotion from speech
+
+const EmotionDetection = () => {
+  const [emotion, setEmotion] = useState(null);
+  const [clothingRecommendations, setClothingRecommendations] = useState([]);
+
+  const handleSpeechInput = async () => {
+    try {
+      const spokenText = await fetchEmotionFromSpeech(); // Function to capture speech and fetch emotion
+      const detectedEmotion = await determineEmotion(spokenText); // Function to process emotion from speech
+
+      setEmotion(detectedEmotion);
+      
+  };
+
+  return (
+    <Card title="Emotion Detection and Clothing Recommendations">
+      <Button onClick={handleSpeechInput} type="primary" icon={<MicrophoneOutlined />}>
+        Click to Speak
+      </Button>
+      <div>
+        {emotion && <p>Detected Emotion: {emotion}</p>}
+        {clothingRecommendations.length > 0 && (
+          <div>
+            <h3>Clothing Recommendations:</h3>
+            <ul>
+              {clothingRecommendations.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </Card>
+  );
+};
+
+export default EmotionDetection;

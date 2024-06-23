@@ -1,0 +1,90 @@
+/* ShoppingCart.css */
+
+.cart-container {
+  padding: 20px;
+  text-align: center;
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure the container can be used for positioning child elements */
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+}
+
+.cart-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px; /* Ensure there's enough space between the header and articles */
+}
+
+.cart-shopcart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+.cart-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer; /* Make it clear that the logo is clickable */
+}
+
+.cart-options-title {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #ab7945;
+  position: relative; /* Change to relative to avoid position issues */
+  margin: 0 auto; /* Center the title */
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between; /* Space between articles */
+  padding-top: 40px; /* Ensure there's enough space between the title and articles */
+}
+
+.article {
+  width: calc(33.33% - 20px); /* Adjust width to ensure three per row with space in between */
+  margin-bottom: 20px; /* Space between rows */
+  background: #ab7945;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.article h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.article p {
+  font-size: 14px;
+}
+
+.article a {
+  display: block;
+  margin-top: 10px;
+  color: #eee5ba;
+  text-decoration: none;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}

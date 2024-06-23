@@ -1,2 +1,89 @@
-main {
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.cart-container {
+  padding: 20px;
+  text-align: center;
+  background-image: url('/background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Ensure the container can be used for positioning child elements */
+  min-height: 100vh; /* Ensure it covers the entire viewport height */
+}
+
+.cart-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust spacing between header and content */
+}
+
+.cart-shopcart {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+.cart-logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer; /* Make it clear that the logo is clickable */
+}
+
+.main {
+  height: calc(100vh - 60px); /* Adjust height to consider header height */
+  width: 100%;
+  /* background-image: url('/background.png'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.left-content {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.title {
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin: 10px 0; /* Adjust margin to reduce space */
+}
+
+.vibe {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 5px 0; /* Adjust margin to reduce space */
+  color: #ab7945;
+}
+
+.separator {
+  width: 100%;
+  border: none;
+  border-top: 2px solid #000;
+  margin: 5px 0; /* Adjust margin to reduce space */
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 10px;
 }

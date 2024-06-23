@@ -1,0 +1,19 @@
+/* UnlockButton.css */
+
+.new-button {
+  position: absolute; /* Use absolute positioning */
+  top: 20px; /* Adjust this value to move the button up */
+  /*changed from 150 to 20 bc wasnt fitting all screens*/
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px; /* Slightly rounded corners */
+  background-color: #ab7945; /* Blue background color */
+  color: white; /* White text */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.new-button:hover {
+  background-color: #bd9164; /* Darker blue on hover */
+}
